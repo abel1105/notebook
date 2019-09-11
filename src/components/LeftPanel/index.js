@@ -52,7 +52,7 @@ function LeftPanel() {
               onClick={onClickArticle(articleId)}
             >
               <div className={s.title}>
-                <b>
+                <b className={s.title_text}>
                   {list[articleId].data.document.nodes[0]
                     ? list[articleId].data.document.nodes[0].nodes[0].text
                     : ''}

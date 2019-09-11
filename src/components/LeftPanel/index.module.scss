@@ -48,6 +48,12 @@
   }
 }
 
+.title_text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .time {
   margin-top: 12px;
   color: $time;
