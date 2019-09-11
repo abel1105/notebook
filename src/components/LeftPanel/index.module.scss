@@ -1,0 +1,54 @@
+@import '../../styles/variable';
+
+.root {
+  height: calc(100vh - 60px);
+  width: 330px;
+  border-right: 1px solid $secondary;
+}
+
+.top {
+  width: 100%;
+  padding: 12px 16px;
+  display: flex;
+  height: 38px;
+  justify-content: space-between;
+  border-bottom: 1px solid $secondary;
+
+  span {
+    font-size: 18px;
+  }
+}
+
+.container {
+  height: calc(100% - 38px);
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.article {
+  display: flex;
+  flex-direction: column;
+  padding: 16px 18px;
+  align-items: flex-start;
+  border-bottom: 1px solid $secondary;
+}
+
+.article_active {
+  background: $primary_20;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+  span {
+    font-size: 18px;
+  }
+}
+
+.time {
+  margin-top: 12px;
+  color: $time;
+}

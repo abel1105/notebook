@@ -1,5 +1,18 @@
+@import '../../styles/variable';
+
 .root {
-  text-align: center;
+  * {
+    box-sizing: border-box;
+  }
+}
+
+.container {
+  display: flex;
+}
+
+.root_dark {
+  background: $dark;
+  color: #fff;
 }
 
 .logo {

@@ -1,0 +1,40 @@
+@import '../../styles/variable';
+
+.root {
+  width: 100vw;
+  padding: 12px 16px;
+  display: flex;
+  border-bottom: 1px solid $secondary;
+}
+
+.left {
+  width: 314px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.right {
+  width: calc(100vw - 330px);
+}
+
+.color {
+  color: $secondary;
+}
+
+.color_active {
+  color: $primary;
+}
+
+.button {
+  background: $primary;
+  height: 36px;
+  width: 80px;
+  color: #fff;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+}
+

@@ -1,24 +1,22 @@
-import React from 'react';
-import logo from '../../images/logo.svg';
+import React, { useRef } from 'react';
+import cx from 'classnames';
+
 import s from './index.module.scss';
+import NavBar from '../NavBar';
+import { useSelector } from 'react-redux';
+import LeftPanel from '../LeftPanel';
+import RichEditor from '../RichEditor';
 
 function Homepage() {
+  const isDark = useSelector(state => state.root.isDark);
+  const editor = useRef();
   return (
-    <div className={s.root}>
-      <header className={s.header}>
-        <img src={logo} className={s.logo} alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className={s.link}
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={cx(s.root, { [s.root_dark]: isDark })}>
+      <NavBar editorRef={editor} />
+      <div className={s.container}>
+        <LeftPanel />
+        <RichEditor forwardedRef={editor} />
+      </div>
     </div>
   );
 }

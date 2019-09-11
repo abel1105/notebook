@@ -1,0 +1,17 @@
+@import '../../styles/variable';
+
+.root {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  color: $secondary;
+  margin: 0 4px;
+}
+
+.button {
+  margin: 0 4px;
+}
+
+.button_active {
+  color: $primary;
+}
