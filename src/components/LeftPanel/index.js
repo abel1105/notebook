@@ -1,5 +1,6 @@
 import React from 'react';
 import cx from 'classnames';
+import moment from 'moment';
 
 import s from './index.module.scss';
 import { Icon } from '@material-ui/core';
@@ -61,7 +62,9 @@ function LeftPanel() {
                   <Icon>{list[articleId].isStar ? 'star' : 'star_border'}</Icon>
                 </div>
               </div>
-              <div className={s.time}>2 days ago</div>
+              <div className={s.time}>
+                {moment.unix(list[articleId].timestamp).fromNow()}
+              </div>
             </div>
           );
         })}

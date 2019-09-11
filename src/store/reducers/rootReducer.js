@@ -99,6 +99,7 @@ const rootReducer = (state = initialState, { type, payload }) => {
         ...state.list,
         [state.current]: {
           ...state.list[state.current],
+          timestamp: moment().unix(),
           data: payload.editorState.toJSON()
         }
       };
