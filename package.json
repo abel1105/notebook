@@ -1,6 +1,6 @@
 {
-  "name": "react-boilerplate",
-  "homepage": "https://abel1105.github.io",
+  "name": "notebook",
+  "homepage": "https://abel1105.github.io/notebook",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
